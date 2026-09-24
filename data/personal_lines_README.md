@@ -11,7 +11,7 @@ Regenerate it (deterministic, seed 42) with:
 python -m pricing.generate_data
 ```
 
-This writes `data/motor_policies.csv` (150,000 policy-years, ~12 MB). The CSV is
+This writes `data/motor_policies.csv` (150,000 policy-years, ~13 MB). The CSV is
 git-ignored because the script reproduces it exactly.
 
 ## Portfolio at a glance
@@ -60,7 +60,7 @@ so a well-specified GLM should recover them.
 
 | Factor | True relativity |
 |---|---|
-| Driver age | Smooth U-curve: `1 + 1.8*exp(-(age-17)/5) + 0.5*max(0, (age-70)/10)`, normalised to age 45. About 2.8x at 17, 1.6x at 22, 1.1x at 30, flat through middle age, rising to about 1.5x at 85 |
+| Driver age | Smooth U-curve: `1 + 1.8*exp(-(age-17)/5) + 0.5*max(0, (age-70)/10)`, normalised to age 45. About 2.8x at 17, 1.6x at 22, 1.1x at 30, flat through middle age, rising to about 1.5x at 80 and 1.7x at 85 |
 | No-claims years | `exp(-0.07 * min(ncd, 9))`: about 7% off per year, capped at 9 years (0.53x) |
 | Vehicle group | VG1 0.85, VG2 0.95, **VG3 1.00**, VG4 1.15, VG5 1.35 |
 | Region | London 1.30, South East 1.05, **Midlands 1.00**, North 1.08, Scotland 0.85, Wales 0.90 |
