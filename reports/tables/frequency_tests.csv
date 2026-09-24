@@ -1,0 +1,4 @@
+test,statistic,df,p_value
+F1 vs F2: young x VG4-5 interaction,15.144887423775799,1.0,9.95675620041758e-05
+F2 vs F3: overdispersion (Poisson vs NB),99.9824947782472,1.0,7.687499413099535e-24
+Offset check: free log(exposure) coefficient,1.0061096285576383,,0.8928553885514809
