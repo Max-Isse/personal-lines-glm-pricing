@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+
+# Regenerated deterministically by `python -m pricing.generate_data`
+data/*.csv
+models/
