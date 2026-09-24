@@ -6,7 +6,7 @@ Multiplicative relativities from the frequency (Negative Binomial) and severity 
 
 **Base rate: £112.99** per vehicle-year: the technical price for the base risk (age 40-49, NCD 9+, VG2, North, 5-10k miles).
 
-Check: base rate x relativities reproduces the GLM technical price on every holdout policy (max relative difference 2.0e-15).
+Check: base rate x relativities reproduces the GLM technical price on every holdout policy (max relative difference 1.6e-15).
 
 ![Rating factor relativities](figures/rating_factor_relativities.png)
 
