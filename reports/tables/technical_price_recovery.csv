@@ -1,0 +1,6 @@
+,GLM technical price,Flat rate (no rating factors)
+total predicted / total true,0.983749742246245,0.9821688407411107
+correlation of log price with log true,0.989660339662375,
+mean abs % error vs true,0.06719685557719537,0.6678064693618483
+share of policies within 10% of true,0.7857093668016452,0.10655645527136436
+share of policies within 20% of true,0.9625627581651923,0.20870200480667345

@@ -39,6 +39,7 @@ FACTOR_LABELS = {
     "vehicle_group": "Vehicle group",
     "region": "Region",
     "mileage_band": "Annual mileage",
+    "young_driver": "Young driver (<25)",
     "young_high_vg": "Young driver x VG4-5",
 }
 
@@ -70,6 +71,7 @@ def add_bands(df):
     df = df.copy()
     df["age_band"] = band_age(df["driver_age"])
     df["ncd_band"] = band_ncd(df["ncd_years"])
+    df["young_driver"] = (df["driver_age"] < 25).astype(int)
     df["young_high_vg"] = (
         (df["driver_age"] < 25) & df["vehicle_group"].isin(["VG4", "VG5"])
     ).astype(int)
